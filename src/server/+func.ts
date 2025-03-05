@@ -7,4 +7,6 @@ app.get("/", (c) =>
 	c.html(html.replace("<!-- ssr -->", new Date().toTimeString())),
 );
 
+app.get("/json", (c) => c.json({ hello: "world" }));
+
 export const handler = app.fetch;
