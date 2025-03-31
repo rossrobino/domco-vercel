@@ -9,4 +9,4 @@ app.get("/", (c) =>
 
 app.get("/json", (c) => c.json({ hello: "world" }));
 
-export const handler = app.fetch;
+export default app;
